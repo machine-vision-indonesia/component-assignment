@@ -2,12 +2,12 @@ import React, { useState, forwardRef, ForwardedRef } from 'react';
 import { TextField, Autocomplete as MUIAutocomplete, AutocompleteProps as MUIAutocompleteProps } from '@mui/material';
 import { useQuery } from '@tanstack/react-query';
 
-interface Option {
+export interface Option {
   value: string;
   label: string;
 }
 
-interface AutocompleteProps {
+export interface AutocompleteProps {
   options: () => Promise<Option[]>;
   label?: string;
   props?: Omit<MUIAutocompleteProps<Option, false, false, false>, 'options' | 'loading' | 'inputValue' | 'onInputChange' | 'getOptionLabel' | 'renderInput'>;

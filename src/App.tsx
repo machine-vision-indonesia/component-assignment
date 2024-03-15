@@ -6,8 +6,8 @@ function App() {
   const fetchOptions = async () => {
     return [
       {
-        label: "asd",
-        value: "asd"
+        label: "dummy",
+        value: "dummy"
       }
     ];
   };
@@ -15,7 +15,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Autocomplete
-        label="Test"
+        label="Autocomplete"
         options={fetchOptions}
         />
     </QueryClientProvider>
